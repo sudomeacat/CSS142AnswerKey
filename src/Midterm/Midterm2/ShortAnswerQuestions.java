@@ -18,6 +18,33 @@ public class ShortAnswerQuestions {
         System.out.println("\n[Test 2: Merge two arrays]");
         System.out.println(Arrays.toString(merge_alternate_pattern(numbers[0], numbers[1])));
         System.out.println(Arrays.toString(merge_alternate_pattern(numbers[1], numbers[0])));
+
+        System.out.println("\n[Test 3: Mystery return value]");
+        int x, y, z;
+        x = y = z = 70;
+        x = mystery(x, z, y);
+        System.out.println(x + " " +  y + " " + z);
+        y = mystery(z, z, y);
+        System.out.println(x + " " +  y + " " + z);
+        z = mystery(y, y, z);
+        System.out.println(x + " " +  y + " " + z);
+    }
+
+    /**
+     * Question 2 in Midterm 2. Find the result of x, y, and z.
+     *
+     * @param x An integer.
+     * @param z An integer.
+     * @param y An integer.
+     *
+     * @return 2 * y + z
+     */
+    private static int mystery(int x, int z, int y) {
+        z--;
+        x = 2 * y + z;
+        y = x + 1;
+        System.out.println(y + " " + z);
+        return x;
     }
 
     /**
