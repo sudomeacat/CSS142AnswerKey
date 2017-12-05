@@ -1,6 +1,7 @@
 package FinalPrep;
 
 import java.util.Arrays;
+import java.util.Vector;
 
 public class SampleFinal {
     public static void main (String[] args) {
