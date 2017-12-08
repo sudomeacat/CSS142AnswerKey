@@ -37,11 +37,12 @@ public class SampleFinal {
             minumum = iter < minumum ? iter : minumum;
         }
 
+        double[] return_value = new double[original.length];
         for (int i = 0; i < original.length; i++) {
-            original[i] -= minumum;
+            return_value[i] = original[i] - minumum;
         }
 
-        return original;
+        return return_value;
     }
 
     public static class Card {

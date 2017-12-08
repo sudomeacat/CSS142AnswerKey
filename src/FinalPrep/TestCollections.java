@@ -1,6 +1,12 @@
 package FinalPrep;
 
-public class TestCollections {
+import DataStructures.Vector;
+
+import java.util.Iterator;
+import java.util.Spliterator;
+import java.util.function.Consumer;
+
+public class TestCollections implements Iterable{
     public static void main(String... args) {
         Vector<Integer> test_vector = new Vector<>();
         for (int i = 5; i < 10; i++) {
@@ -29,5 +35,20 @@ public class TestCollections {
         test_vector.clear();
         System.out.println(test_vector.size());
         System.out.println(test_vector.toString());
+    }
+
+    @Override
+    public Iterator iterator() {
+        return null;
+    }
+
+    @Override
+    public void forEach(Consumer action) {
+
+    }
+
+    @Override
+    public Spliterator spliterator() {
+        return null;
     }
 }

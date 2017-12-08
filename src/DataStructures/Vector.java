@@ -1,4 +1,4 @@
-package FinalPrep;
+package DataStructures;
 
 /**
  * Hybrid generic class of VSTD::__1::vector and java.util.ArrayList (formerly java.util.Vector),
@@ -71,6 +71,14 @@ public class Vector<Tp> {
         System.arraycopy(elements, index+1, elements, index, r_bound - index);
         r_bound--;
         return item;
+    }
+
+    @SuppressWarnings("unchecked")
+    public Tp at(int index) {
+        if (index < 0 || index > r_bound) {
+            throw new IndexOutOfBoundsException();
+        }
+        return (Tp)elements[index];
     }
 
     /**

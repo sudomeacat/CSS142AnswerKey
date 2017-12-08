@@ -21,12 +21,14 @@ public class ShortAnswerQuestions {
 
         System.out.println("\n[Test 3: Mystery return value]");
         int x, y, z;
-        x = y = z = 70;
-        x = mystery(x, z, y);
+        x = 30;
+        y = 70;
+        z = 20;
+        z = mystery(x, z, y);
         System.out.println(x + " " +  y + " " + z);
-        y = mystery(z, z, y);
+        x = mystery(z, z, x);
         System.out.println(x + " " +  y + " " + z);
-        z = mystery(y, y, z);
+        y = mystery(y, y, z);
         System.out.println(x + " " +  y + " " + z);
     }
 
@@ -39,12 +41,17 @@ public class ShortAnswerQuestions {
      *
      * @return 2 * y + z
      */
-    private static int mystery(int x, int z, int y) {
-        z--;
-        x = 2 * y + z;
-        y = x + 1;
+    private static int mystery(int z, int x, int y) {
+        x=y+x;
+        y=x-z++;
         System.out.println(y + " " + z);
         return x;
+    }
+
+    void q1() {
+        int[] my_array = {5, 16, 28, 38, 42};
+        my_array[2]++;
+
     }
 
     /**
