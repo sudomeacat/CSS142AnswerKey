@@ -1,5 +1,7 @@
 package FinalPrep;
 
+import sun.nio.cs.ext.MacHebrew;
+
 import java.util.Arrays;
 import java.util.Vector;
 
@@ -31,16 +33,18 @@ public class SampleFinal {
     }
 
     public static double[] calc_relative(double[] original) {
-        double minumum = Double.MAX_VALUE;
+        double minumum = original[0];
 
         for (double iter:original) {
             minumum = iter < minumum ? iter : minumum;
+            //minumum = Math.min(iter, minumum);
         }
 
         double[] return_value = new double[original.length];
         for (int i = 0; i < original.length; i++) {
             return_value[i] = original[i] - minumum;
         }
+        //return_value = Arrays.stream(return_value).filter(n -> ((double)original[n])).toArray();
 
         return return_value;
     }

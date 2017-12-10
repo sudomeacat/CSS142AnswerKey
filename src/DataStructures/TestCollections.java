@@ -1,12 +1,6 @@
-package FinalPrep;
+package DataStructures;
 
-import DataStructures.Vector;
-
-import java.util.Iterator;
-import java.util.Spliterator;
-import java.util.function.Consumer;
-
-public class TestCollections implements Iterable{
+public class TestCollections {
     public static void main(String... args) {
         Vector<Integer> test_vector = new Vector<>();
         for (int i = 5; i < 10; i++) {
@@ -37,18 +31,4 @@ public class TestCollections implements Iterable{
         System.out.println(test_vector.toString());
     }
 
-    @Override
-    public Iterator iterator() {
-        return null;
-    }
-
-    @Override
-    public void forEach(Consumer action) {
-
-    }
-
-    @Override
-    public Spliterator spliterator() {
-        return null;
-    }
 }

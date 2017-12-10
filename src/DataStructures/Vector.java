@@ -1,5 +1,7 @@
 package DataStructures;
 
+import com.sun.xml.internal.bind.v2.schemagen.episode.Klass;
+
 /**
  * Hybrid generic class of VSTD::__1::vector and java.util.ArrayList (formerly java.util.Vector),
  * although does not support concurrent operations.
@@ -9,6 +11,7 @@ package DataStructures;
 public class Vector<Tp> {
     private Object[] elements;
     private int r_bound;
+
 
     /**
      * Default constructor for Vector. The element array is initialized to a capacity of 8.

@@ -1,4 +1,4 @@
-package Midterm.Midterm2;
+package Midterm.Midterm2.Midterm2;
 
 import java.util.Arrays;
 

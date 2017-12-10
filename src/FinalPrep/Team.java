@@ -44,7 +44,7 @@ public class Team {
     }
 
     public static void main(String[] args) {
-        Team team = new Team("Cats", 2, "Argys", "Woo", "Uncreative name", "Hello");
+        Team team = new Team("Cats", 2, "Argos", "Woo", "Uncreative name", "Hello", "Creative name");
         System.out.println(team);
         System.out.println();
         team.evaluate_player("Uncreative name", 3, 1, 4);
